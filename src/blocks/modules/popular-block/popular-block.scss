@@ -1,0 +1,207 @@
+.popular {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 41px;
+        color: #333333;
+        margin-bottom: 31px;
+    }
+
+    &__grass {
+        background-image: url("/img/sprites/greenwindow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 337px;
+        padding-left: 58px;
+        padding-top: 48px;
+    }
+
+    &__grass h2 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 41px;
+        color: #ffffff;
+        margin-bottom: 14px;
+    }
+
+    &__grass p {
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        margin-bottom: 34px;
+    }
+
+    &__grass a {
+        text-decoration: none;
+        padding: 16px 32px 16px 32px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: #ffffff;
+        background: #ff6a00;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    &__grass a:hover {
+        background-color: #004b91;
+    }
+
+    &__cards {
+        padding-bottom: 70px;
+    }
+
+    &__box {
+        border-radius: 3px;
+        border: 1px solid #e0e0e0;
+        background: #fff;
+        height: 401px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    &__card-title {
+        color: #333;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        color: #777;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+
+    &__price {
+        color: #004b91;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__card-btn {
+        border: 0;
+        border-radius: 3px;
+        background: #ff6a00;
+        width: 145px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        gap: 4px;
+        transition: all 0.3s ease;
+    }
+
+    &__card-btn:hover {
+        cursor: pointer;
+        background-color: #004b91;
+    }
+}
+
+.swiper .swiper-button-next::after {
+    content: "";
+}
+
+.swiper .swiper-button-prev::after {
+    content: "";
+}
+
+@media (max-width: 1300px) {
+    .popular {
+        &__grass {
+            height: 100%;
+            padding-bottom: 48px;
+            width: 100%;
+            padding-top: 48px;
+        }
+
+        &__grass h2 {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .popular {
+        &__grass h2 {
+            font-size: 26px;
+            max-width: 450px;
+        }
+
+        &__grass h2 br {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .popular {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        &__card-title {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        &__desc {
+            font-size: 13px;
+        }
+
+        &__grass {
+            background-image: url("/img/sprites/greenwindow-small.jpg");
+            background-size: cover;
+            padding-left: 22px;
+            padding-top: 22px;
+            padding-right: 22px;
+            height: 374px;
+        }
+
+        &__grass h2 {
+            font-size: 22px;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        &__grass p {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 45px;
+        }
+
+        &__grass p br {
+            display: none;
+        }
+    }
+
+    .swiper .swiper-button-next {
+        display: none;
+    }
+
+    .swiper .swiper-button-prev {
+        display: none;
+    }
+}
