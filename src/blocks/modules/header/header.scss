@@ -90,7 +90,11 @@
         width: 674px;
         height: 50px;
         padding-left: 10px;
+        padding-right: 10px;
         outline: none;
+        color: #777;
+        font-size: 12px;
+        line-height: 22px;
     }
 
     &__line button {
@@ -171,6 +175,126 @@
     }
 }
 
+.headerMobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: #000;
+    z-index: 10;
+
+    &__inner {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__burgerOpen img {
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+
+    &__burgerClose img {
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 18px;
+        line-height: 48px;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &__cart {
+        display: flex;
+        align-items: center;
+    }
+
+    &__cart img {
+        width: 36px;
+        height: 36px;
+    }
+
+    &__cart-total {
+        position: relative;
+        color: #fff;
+        font-size: 13px;
+        top: 10px;
+        right: 2px;
+    }
+
+    &__settings img {
+        width: 36px;
+        height: 36px;
+        display: block;
+    }
+}
+
+.burger {
+    z-index: 30;
+    &__content {
+        padding-top: 34px;
+        padding-left: 25px;
+        width: 317px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 56px;
+        background: #f7f7f7;
+        backdrop-filter: blur(2px);
+        transform: translateX(-100%);
+        z-index: 30;
+    }
+
+    &__links {
+        color: #777;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__links > li {
+        list-style-type: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.burger__back {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 30;
+    top: 56px;
+}
+
+.open {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.close {
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.closeBtn {
+    display: none;
+}
+
 @media (max-width: 1250px) {
     .header {
         &__left {
@@ -218,6 +342,7 @@
     .header {
         &__inner {
             flex-direction: column;
+            padding-top: 76px;
         }
 
         &__left {
@@ -261,5 +386,9 @@
 
     .navigation {
         display: none;
+    }
+
+    .headerMobile {
+        display: block;
     }
 }

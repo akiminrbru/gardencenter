@@ -3,3 +3,5 @@ import "./import/components";
 import "./import/slider"
 import "./import/swiper"
 import './import/dynamicAdapt'
+import './import/burger'
+import './import/accordeon'
