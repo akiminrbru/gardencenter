@@ -103,6 +103,7 @@
         text-align: center;
         text-transform: uppercase;
         color: #333333;
+        transition: all 0.2s ease-in-out;
     }
 
     &__name p {
@@ -110,10 +111,15 @@
         line-height: 18px;
         text-align: center;
         color: #777777;
+        transition: all 0.2s ease-in-out;
     }
 
     &__link {
         text-decoration: none;
+    }
+
+    &__link:hover &__name h2 {
+        color: #ff6a00;
     }
 }
 

@@ -76,6 +76,7 @@
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 10px;
+        transition: all 0.2s ease-in-out;
     }
 
     &__desc {
@@ -118,6 +119,10 @@
 
     &__link {
         text-decoration: none;
+    }
+
+    &__link:hover &__card-title {
+        color: #ff6a00;
     }
 }
 
