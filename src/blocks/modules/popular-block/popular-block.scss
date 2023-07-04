@@ -115,6 +115,10 @@
         cursor: pointer;
         background-color: #004b91;
     }
+
+    &__link {
+        text-decoration: none;
+    }
 }
 
 .swiper-prev {

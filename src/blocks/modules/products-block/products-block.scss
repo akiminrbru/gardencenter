@@ -20,13 +20,14 @@
         border: 1px solid #e0e0e0;
         border-radius: 3px;
         margin-bottom: 11px;
-    }
-
-    &__link {
         position: relative;
     }
 
-    &__link::before {
+    &__link {
+        text-decoration: none;
+    }
+
+    &__box::before {
         position: absolute;
         content: "";
         background: rgba(0, 75, 145, 0.15);
@@ -36,13 +37,11 @@
         bottom: 0;
         right: 15%;
         left: 15%;
-        display: block;
-        height: 100%;
         transition: all 0.3s ease;
         opacity: 0;
     }
 
-    &__link:hover::before {
+    &__box:hover::before {
         opacity: 1;
         left: 0;
         right: 0;
@@ -59,10 +58,6 @@
         font-size: 18px;
         line-height: 25px;
         color: #333333;
-    }
-
-    &__link {
-        text-decoration: none;
     }
 }
 
