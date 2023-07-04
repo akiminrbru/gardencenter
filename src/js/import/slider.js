@@ -5,8 +5,8 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 40,
     slidesPerView: 1,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-next',
+      prevEl: '.swiper-prev',
     },
     breakpoints: {
       768: {
@@ -20,3 +20,15 @@ const swiper = new Swiper('.swiper', {
       },
   },
 });
+
+const swiperPrev = document.getElementById("swiper-next");
+const swiperNext = document.getElementById("swiper-prev");
+
+if (swiperPrev && swiperNext ) {
+  swiperPrev.addEventListener("click", () => {
+    swiper.slidePrev();
+  });
+  swiperNext.addEventListener("click", () => {
+    swiper.slideNext();
+  });
+}

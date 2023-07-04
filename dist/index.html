@@ -92,7 +92,7 @@
             sizes="1024x1024"
             href="img/favicons/apple-touch-icon-1024x1024.png"
         />
-        <link rel="stylesheet" href="styles/main.min.css" />
+        <link rel="stylesheet" href="styles/main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -219,18 +219,22 @@
                 </div>
             </div>
             <div class="banner__right">
-                <div class="banner__card banner__card1">
-                    <div class="banner__name">
-                        <h2>MSE 170</h2>
-                        <p>Электропила</p>
+                <a class="banner__link" href="#">
+                    <div class="banner__card banner__card1">
+                        <div class="banner__name">
+                            <h2>MSE 170</h2>
+                            <p>Электропила</p>
+                        </div>
                     </div>
-                </div>
-                <div class="banner__card banner__card2">
-                    <div class="banner__name">
-                        <h2>RMA 443</h2>
-                        <p>Аккумуляторная газонокосилка</p>
+                </a>
+                <a class="banner__link" href="#"
+                    ><div class="banner__card banner__card2">
+                        <div class="banner__name">
+                            <h2>RMA 443</h2>
+                            <p>Аккумуляторная газонокосилка</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -242,39 +246,47 @@
             <h3 class="products__title">Каталог</h3>
             <div class="products__cards">
                 <div class="products__card">
-                    <div class="products__box">
-                        <img
-                            src="img/sprites/main_product3.png"
-                            alt="product3"
-                        />
-                    </div>
+                    <a class="products__link" href="#">
+                        <div class="products__box">
+                            <img
+                                src="img/sprites/main_product3.png"
+                                alt="product3"
+                            />
+                        </div>
+                    </a>
                     <h3>Мотопилы</h3>
                 </div>
                 <div class="products__card">
-                    <div class="products__box">
-                        <img
-                            src="img/sprites/main_product4.png"
-                            alt="product3"
-                        />
-                    </div>
+                    <a class="products__link" href="#">
+                        <div class="products__box">
+                            <img
+                                src="img/sprites/main_product4.png"
+                                alt="product3"
+                            />
+                        </div>
+                    </a>
                     <h3>Моторизированные агрегаты</h3>
                 </div>
                 <div class="products__card">
-                    <div class="products__box">
-                        <img
-                            src="img/sprites/main_product5.png"
-                            alt="product3"
-                        />
-                    </div>
+                    <a class="products__link" href="#">
+                        <div class="products__box">
+                            <img
+                                src="img/sprites/main_product5.png"
+                                alt="product3"
+                            />
+                        </div>
+                    </a>
                     <h3>Очистительные устройства</h3>
                 </div>
                 <div class="products__card">
-                    <div class="products__box">
-                        <img
-                            src="img/sprites/main_product6.png"
-                            alt="product3"
-                        />
-                    </div>
+                    <a class="products__link" href="#">
+                        <div class="products__box">
+                            <img
+                                src="img/sprites/main_product6.png"
+                                alt="product3"
+                            />
+                        </div>
+                    </a>
                     <h3>Садовая техника</h3>
                 </div>
             </div>
@@ -317,6 +329,9 @@
         <div class="popular__inner">
             <h3 class="popular__title">Популярные товары</h3>
             <div class="popular__cards">
+                <div class="swiper-prev">
+                    <img src="img/sprites/arrowprev.svg" alt="arrownext" />
+                </div>
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -488,12 +503,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-prev">
-                        <img src="img/sprites/arrowprev.svg" alt="arrownext" />
-                    </div>
-                    <div class="swiper-button-next">
-                        <img src="img/sprites/arrownext.svg" alt="arrownext" />
-                    </div>
+                </div>
+                <div class="swiper-next">
+                    <img src="img/sprites/arrownext.svg" alt="arrownext" />
                 </div>
             </div>
             <div class="popular__grass">
@@ -600,7 +612,7 @@
     </div>
 </footer>
 
-        <script src="js/vendor.min.js"></script>
-        <script src="js/main.min.js"></script>
+        <script src="js/vendor.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
